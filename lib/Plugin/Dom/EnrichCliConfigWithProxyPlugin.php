@@ -3,10 +3,14 @@ declare(strict_types=1);
 
 namespace RunAsRoot\CliConstructorArgAutoProxy\Plugin\Dom;
 
+use Magento\Framework\ObjectManager\Config\Reader\Dom;
 use Psr\Log\LoggerInterface;
 use ReflectionException;
 use RunAsRoot\CliConstructorArgAutoProxy\Service\EnrichCliConfigWithProxyService;
 
+/**
+ * @SuppressWarnings(PHPMD.LongVariable)
+ */
 class EnrichCliConfigWithProxyPlugin
 {
     private EnrichCliConfigWithProxyService $enrichCliConfigWithProxyService;

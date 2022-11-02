@@ -3,6 +3,9 @@ declare(strict_types=1);
 
 namespace RunAsRoot\CliConstructorArgAutoProxy\Mapper;
 
+/**
+ * @SuppressWarnings(PHPMD.LongVariable)
+ */
 class ProxiedConstructArgsToDiConfigMapper
 {
     public function map(array $diConfig, string $instanceClassName, array $proxiedConstructArgsConfig): array

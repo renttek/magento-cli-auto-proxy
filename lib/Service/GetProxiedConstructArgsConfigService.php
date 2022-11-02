@@ -6,6 +6,9 @@ namespace RunAsRoot\CliConstructorArgAutoProxy\Service;
 use RunAsRoot\CliConstructorArgAutoProxy\Enum\ProxyClassEntityInterfaceEnum;
 use RunAsRoot\CliConstructorArgAutoProxy\Validator\IsClassEligibleForProxyValidator;
 
+/**
+ * @SuppressWarnings(PHPMD.LongVariable)
+ */
 class GetProxiedConstructArgsConfigService
 {
     private IsClassEligibleForProxyValidator $proxyValidator;

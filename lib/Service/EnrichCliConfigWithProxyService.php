@@ -8,6 +8,9 @@ use Magento\Framework\Console\CommandListInterface;
 use ReflectionException;
 use RunAsRoot\CliConstructorArgAutoProxy\Mapper\ProxiedConstructArgsToDiConfigMapper;
 
+/**
+ * @SuppressWarnings(PHPMD.LongVariable)
+ */
 class EnrichCliConfigWithProxyService
 {
     private ClassReaderInterface $classReader;
