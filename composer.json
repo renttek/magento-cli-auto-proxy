@@ -37,5 +37,14 @@
     "allow-plugins": {
       "magento/composer-dependency-version-audit-plugin": false
     }
+  },
+  "scripts": {
+    "test-static": [
+      "vendor/bin/parallel-lint lib",
+      "vendor/bin/phpcs --standard=PSR12 lib",
+      "vendor/bin/phpmd lib text cleancode,codesize,design,naming,unusedcode ",
+      "vendor/bin/phpstan",
+      "vendor/bin/psalm"
+    ]
   }
 }
