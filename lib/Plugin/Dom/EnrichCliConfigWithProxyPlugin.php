@@ -27,7 +27,7 @@ class EnrichCliConfigWithProxyPlugin
     /**
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
-    public function afterRead($subject, array $result, ?string $scope): array
+    public function afterRead(Dom $subject, array $result, ?string $scope): array
     {
         if ($scope !== 'global') {
             return $result;

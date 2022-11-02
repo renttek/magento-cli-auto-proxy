@@ -7,6 +7,9 @@ use Magento\Framework\App\ObjectManager;
 use Magento\Framework\ObjectManager\Config\Reader\Dom as OriginDom;
 use RunAsRoot\CliConstructorArgAutoProxy\Plugin\Dom\EnrichCliConfigWithProxyPlugin;
 
+/**
+ * @psalm-suppress PropertyNotSetInConstructor
+ */
 class Interceptor extends OriginDom
 {
     public function read($scope = null)
