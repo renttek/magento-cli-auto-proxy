@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace RunAsRoot\CliConstructorArgAutoProxy\Service;
@@ -39,7 +40,6 @@ class EnrichCliConfigWithProxyService
         }
 
         foreach ($cliCommandsList as $cliCommandConfig) {
-
             $cliInstanceClassName = $cliCommandConfig['instance'] ?? null;
             if ($cliInstanceClassName === null) {
                 continue;
